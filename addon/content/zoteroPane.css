@@ -1,3 +1,25 @@
-.makeItRed {
-  background-color: tomato;
+:root {
+  --rowheightdoubler-density-padding: 11px;
+  --rowheightdoubler-measure-font-size: calc(2 * 1em + (11px / 1.3333333333));
+}
+
+:root[zoteroUIDensity="compact"] {
+  --rowheightdoubler-density-padding: 5px;
+  --rowheightdoubler-measure-font-size: calc(2 * 1em + (5px / 1.3333333333));
+}
+
+:root > div[style*="line-height: 1.3333333333333333"] {
+  font-size: var(
+    --rowheightdoubler-measure-font-size,
+    calc(2 * 1em + (11px / 1.3333333333))
+  ) !important;
+}
+
+#zotero-pane .virtualized-table-body .row {
+  box-sizing: border-box;
+  min-height: calc(
+    2 * (1.3333333333em + var(--rowheightdoubler-density-padding, 11px))
+  );
+  line-height: calc(2 * 1.3333333333em);
+  padding-block: calc(var(--rowheightdoubler-density-padding, 11px) / 2);
 }

@@ -1,24 +1,24 @@
 {
   "name": "zotero-plugin-template",
   "type": "module",
-  "version": "3.1.0",
-  "description": "Zotero Plugin Template",
+  "version": "0.0.0",
+  "description": "Double the row height of items list in Zotero library",
   "config": {
-    "addonName": "Zotero Plugin Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate"
+    "addonName": "Row Height Doubler",
+    "addonID": "rowheight@littleironx",
+    "addonRef": "rowheight",
+    "addonInstance": "rowheight",
+    "prefsPrefix": "extensions.zotero.rowheight"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/windingwind/zotero-plugin-template.git"
   },
-  "author": "windingwind",
+  "author": "littleironx",
   "bugs": {
     "url": "https://github.com/windingwind/zotero-plugin-template/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-plugin-template#readme",
+  "homepage": "https://github.com/littleironx/zotero-row-height-doubler",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
